@@ -36,7 +36,7 @@ public class Jugador {
                         System.out.print("Por favor ingresá una sola letra: ");
                         entradaString=entrada.nextLine();
                     }
-                    letra=entradaString.charAt(0);
+                    letra=entradaString.toUpperCase().charAt(0);
                     while(historialIntentos.contains(letra)) {
                         System.out.print("Ya ingresaste esa letra, intente nuevamente: ");
                         letra=entrada.nextLine().toUpperCase().charAt(0);
